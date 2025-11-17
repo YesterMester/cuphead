@@ -2117,8 +2117,7 @@ var UnityLoader = UnityLoader || {
     },
     processMemoryInitializerJob: function (e, t) {
         e.memoryInitializerRequest.status = 200, e.memoryInitializerRequest.response = UnityLoader.Job.result(e, "downloadMemoryInitializer"), e.memoryInitializerRequest.callback && e.memoryInitializerRequest.callback(), t.complete()
-    },
-    processDataJob: function (e, t) {
+   processDataJob: function (e, t) {
         var r = UnityLoader.Job.result(e, "downloadData"),
             n = new DataView(r.buffer, r.byteOffset, r.byteLength),
             o = 0,
